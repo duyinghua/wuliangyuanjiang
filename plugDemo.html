@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/iview.css"/>
+    <link rel="stylesheet" href="css/jquery.jscrollpane.css"/>
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/raphael-min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/jquery.jscrollpane.js"></script>
+    <script type="text/javascript" src="js/iview.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#iview').iView({
+                pauseTime: 7000,
+                pauseOnHover: true,
+                directionNav: false,
+                directionNavHide: false,
+                controlNav: true,
+                controlNavNextPrev: false,
+                controlNavThumbs: true,
+                controlNavHoverOpacity: 1,
+                timer: "Bar",
+                timerDiameter: 120,
+                timerPadding: 3,
+                timerStroke: 4,
+                timerBarStroke: 0,
+                timerColor: "#0F0",
+                timerPosition: "bottom-right",
+                timerX: 15,
+                timerY: 60
+            });
+            $('.content').jScrollPane();
+
+        });
+    </script>
+</head>
+<body>
+<div id="iview">
+    <div data-iview:thumbnail="photos/photo11_thumb.jpg" data-iview:image="photos/photo11.jpg"></div>
+
+    <div data-iview:thumbnail="photos/photo12_thumb.jpg" data-iview:image="photos/photo12.jpg"></div>
+
+    <div data-iview:thumbnail="photos/photo13_thumb.jpg" data-iview:image="photos/photo13.jpg"></div>
+
+    <div data-iview:thumbnail="photos/photo14_thumb.jpg" data-iview:image="photos/photo14.jpg"></div>
+</div>
+
+<div class="content">
+    <div>
+        放假安排方案是依据国务院《关于修改《全国年节及纪念日放假办法》的决定》，参照往年国务院办公厅下达的关于部分节假日安排的通知，结合中国当前工作实际，在坚持科学发展观重要思想指导下做出的。
+        2014年节假日放假安排方案须报请国务院批准方可生效，最终方案将于
+        2013年底予以公布，届时国务院办公厅将以通知的方式下达到“各省、自治区、直辖市人民政府，国务院各部委、各直属机构”。以便相关单位及早合理安排节假日旅游、交通运输、生产经营等有关工作，2014年元旦、春节、清明节、劳动节、端午节、中秋节和国庆节放假调休日期的具体安排通知如下。
+        一、元旦：2013年12月30日至2014年1月1日调休，放假3天。其中2014年1月1日（星期三）为国家法定节假日，2013年12月28日（星期六），2013年12月29日（星期日）公休分别调至2013年12月30日（星期一）、2013年12月31日（星期二），2013年12月28日（星期六），2013年12月29日（星期日）、2014年1月2日（星期四）照常上班。
+        二、春节：2014年1月30日至2014年2月5日调休，放假7日。即1月26日（星期日）公休调至1月30日（星期四，农历除夕）、1月31日（星期五，农历正月初一）、2月1日（星期六，农历正月初二）、2月2日（星期日，农历正月初三）为法定节假日，2月1日（星期六）、2月2日（星期日）分别公休调至2月3日（星期一），2月4日（星期二）、2月8日（星期六）公休调至至2月5日（星期三），1月26日（星期日），2月8日（星期六）、2月6日（星期四）照常上班。
+        三、清明节：2014年4月5日至7日调休，共3天。其中4月5日（星期六，农历清明当日）为法定节假日、4月6日（星期日）公休,4月5日公休调至4月7日（星期星期一），4月8日（星期二）照常上班。
+        四、五一劳动节：2014年5月1日至5月3日放假调休，共3天。其中5月1日（星期四、“五一”国际劳动节）为法定节假日，5月3日（星期星期六），5月4日（星期日）公休调至5月2日（星期五），5月4日（星期日）照常上班。
+        五、端午节：2014年5月31日至6月2日放假公休，共3天。其中5月31日（星期六）、6月1日（星期日）公休，6月2日（星期一，农历端午节当日）为国家法定节假日、6月3日（星期二）照常上班。
+        六、中秋节：2014年9月6日至9月8日放假，共3天。其中9月6日（星期六）、9月7日（星期日）为公休，9月8日（星期一，农历中秋节）法定节假日，9月9日（星期二）照常上班。
+        七、十一国庆节：2014年10月1日至10月7日放假，共7天。其中10月1日（星期三）、10月2日（星期四）、10月3日（星期五）为国庆节法定节假日，
+        10月4日（星期六）、10月5日（星期日）公休，9月28日（星期日）、10月11日（星期六）公休分别调至10月6日（星期一）、10月7日（星期二），9月28日（星期日）、10月11日（星期六）、10月8日（星期三）照常。
+    </div>
+
+</div>
+<div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博"
+                                                                          class="bshare-sinaminiblog"></a><a
+        title="分享到开心网" class="bshare-kaixin001"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博"
+                                                                                                   class="bshare-qqmb"></a><a
+        title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a></div>
+<script type="text/javascript" charset="utf-8"
+        src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+</body>
+</html>

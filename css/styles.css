@@ -1,0 +1,118 @@
+* { padding: 0px; margin: 0px; outline: none; }
+a { text-decoration: none; cursor: pointer; }
+li { list-style: none; }
+body { width: 100%; background-color: #FBF6E4; background-position: center 0; background-repeat: no-repeat; background-attachment: fixed; background-size: cover; }
+body.bg1 { background-image: url(../image/body_bg_1.jpg); }
+body.bg2 { background-image: url(../image/body_bg_2.jpg); }
+body.bg3 { background-image: url(../image/body_bg_3.jpg); }
+body.bg4 { background-image: url(../image/body_bg_4.jpg); }
+.undline { border-bottom: 1px #A19F8E dashed }
+
+.index { background: #000; }
+.index .banner { position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; margin: 0 auto; min-width: 1000px; }
+.index .banner ul { position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; overflow: hidden; }
+.index .banner li { display: none; position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; margin: 0 auto; }
+/*.index .banner li.li1 { background-color: #FAC06E; }
+.index .banner li.li2 { background-color: #F4E6CB; }
+.index .banner li.li3 { background-color: #E5F3FE; }
+.index .banner li.li4 { background-color: #E4E8E7; }    */
+.index .banner li.li1 .font { left: 40%; }
+.index .banner li.li2 .font { left: 40%; }
+.index .banner li.li3 .font { left: 40%; }
+.index .banner li.li4 .font { left: 40%; }
+.index .banner li.cur { display: block; }
+.index .banner li.cur .font { left: 0%; }
+.index .banner li .bg { display: block; width: 100%; }
+.index .banner li .font { display: block; position: absolute; width: 100%; top: 0; left: 0; }
+.index .banner .nav_btn { display: block; position: absolute; top: 50%; width: 60px; height: 100px; background-image: url(../image/iview/nav_paddles.png); cursor: pointer; }
+.index .banner .nav_btn:hover { background-image: url(../image/iview/nav_paddles_down.png) }
+.index .banner .prev { left: 0; background-position: 0 0; }
+.index .banner .next { right: 0; background-position: -60px 0; }
+.index .banner .code2 { display: block; position: absolute; top: 0; bottom: 0; width: 100%; }
+
+.header { position: relative; width: 1000px; margin: 0 auto; height: 170px; font-family: "微软雅黑"; border-bottom: 1px #A19F8E dashed }
+.header .logo { margin: 20px 0 0; overflow: auto; float: left; border: 0; }
+.header .logo .logo_pic { display: block; float: left; margin: 2px 0; width: 62px; height: 62px; border: 0; }
+.header .logo .line_pic { display: block; float: left; margin: 0px 10px; width: 2px; height: 64px; border: 0; }
+.header .logo .txt { float: left; margin: 3px 0px 0; width: 271px; height: 59px; border: 0; }
+.header .tel { float: right; margin: 40px 0px 0 100px; }
+.header .tel .txt { float: right; height: 24px; line-height: 24px; font-size: 12px; border-bottom: 1px #A19F8E dashed; }
+.header .tel .telno { clear: both; float: right; padding: 0 5px 0 18px; background: url(../image/tel.png) no-repeat left center; height: 20px; line-height: 20px; font-size: 16px; font-weight: bold; font-family: "Arial" }
+.header .nav { position: absolute; right: 0; top: 90px; }
+.header .nav li { float: left; margin: 40px 0; width: 128px; height: 22px; line-height: 22px; font-size: 12px; text-align: center; padding: 0 2px; }
+.header .nav li a { display: block; color: #000; border-bottom: 2px #413e3e solid; }
+.header .nav li.back { border: 0; padding: 0 }
+
+.footer { width: 100%; position: fixed; bottom: 0; height: 80px; background: #000; color: #fff; }
+.footer .main { width: 1000px; margin: 0 auto; height: 100%; }
+.footer .main  .contact { float: left; height: 100%; margin-top: 5px; }
+.footer .main  .contact li { height: 20px; line-height: 20px; margin: 2px 0; padding-left: 24px; font-size: 12px; color: #ccc; background-image: url(../image/icon_contact.png); background-repeat: no-repeat; }
+.footer .main  .contact li.tel { background-position: 0px 3px; }
+.footer .main  .contact li.email { background-position: 0px -17px; }
+.footer .main  .contact li.addr { background-position: 0px -40px; }
+.footer .main .nav { float: right; height: 20px; }
+.footer .main .nav li { float: left; width: 130px; line-height: 20px; font-size: 12px; border: 1px #666 solid; margin-left: 1px; }
+.footer .main .nav li a { display: block; padding: 0 15px; color: #fff; background-repeat: no-repeat; background-position: right bottom; background-image: url(../image/pull.png); background-color: #303533;
+    -webkit-transition: all ease .5s; -moz-transition: all ease .5s; -ms-transition: all ease .5s; -o-transition: all ease .5s; }
+.footer .main .nav li a.cur, .footer .main .nav li a:hover { background-position: right top; background-color: #A61611; }
+.footer .main .share { float: right; color: #ccc; font-size: 12px; width: 230px; margin-left: 400px; padding: 12px 0 10px; }
+.footer .main .copyright { float: right; color: #ccc; font-size: 12px; height: 20px; margin-left: 200px; line-height: 20px; }
+
+.body { width: 1000px; margin: 30px auto 0; min-height: 590px; margin-bottom: 80px; }
+.body .adview { width: 760px; float: left; }
+.body .painting_pro { line-height: 20px; font-size: 12px; }
+.body .describe { width: 240px; float: left; font-size: 12px; }
+.body .describe .tit { padding: 0 0 10px; font-weight: normal; font-size: 12px; }
+.body .describe .des { padding: 10px 0; line-height: 25px; }
+.body .describe table { padding: 10px 0; line-height: 20px; }
+.body .describe table td { vertical-align: top; }
+.body .list li { overflow: auto; clear: both; }
+.body .list li.painting { *height: 273px; }
+.body .list li .painting { display: block; float: left; height: 210px; width: 204px; background-color: #fff; padding: 10px; margin: 20px 11px; border: 1px #999 solid; box-shadow: 0 0 10px #666; }
+.body .list li .painting img { width: 204px; height: 170px; }
+.body .list li .painting .txt { height: 40px; line-height: 40px; text-align: center; font-size: 12px; font-weight: normal; border-top: 1px #A19F8E dashed; margin-top: 6px; }
+.body .list li .news { display: block; position: relative; overflow: auto; padding: 10px 0; color: #000; font-size: 12px;
+    -webkit-transition: all ease .5s; -moz-transition: all ease .5s; -ms-transition: all ease .5s; -o-transition: all ease .5s; }
+.body .list li .news:hover { color: #a61611 }
+.body .list li .news img { display: block; float: left; width: 237px; height: 105px; }
+.body .list li .news .con { margin-left: 260px; text-indent: 2em; line-height: 24px; height: 72px; overflow: hidden; }
+.body .list li .news .date { position: absolute; bottom: 10px; right: 0; }
+.body .page { clear: both; float: right; overflow: auto; margin: 10px auto; }
+.body .page a { display: block; float: left; padding: 0 10px; margin: 0 2px; height: 24px; line-height: 24px; color: #000; text-align: center; font-size: 12px; background: url(../image/page_bg.png); border: 1px #aaa solid; border-radius: 3px; }
+
+.body .float_pic { float: left; width: 400px; height: 232px; margin: 0 10px 10px 0; }
+.body .float_txt { float: right; width: 580px; height: 64px; margin-bottom: 40px; }
+.body .map { width: 1000px; height: 420px; border: 1px solid #aaa; background: url(../image/map.jpg) }
+.body .banner { width: 998px; height: 147px; border: 1px solid #aaa; }
+.body .content { position: relative; margin: 25px 0; font-size: 12px; font-family: "宋体" }
+.body .content h4 { line-height: 16px; margin: 14px 0; font-weight: bold; }
+.body .content p { text-indent: 2em; line-height: 16px; margin: 10px 0; }
+.body .content .code2 { position: absolute; width: 87px; height: 87px; top: 0px; left: 400px; }
+.body .news_title .tit { text-align: center; margin-bottom: 20px; font-size: 18px; font-weight: bold; height: 30px; line-height: 30px; font-family: "微软雅黑"; }
+.body .news_title .mark { text-align: center; margin: 20px; }
+.body .news_title .mark .ts { display: inline-block; padding: 0 10px; font-size: 12px; }
+.body .news_title .mark .borl { border-right: 1px #999 solid; }
+.body .news_content { margin-top: 20px; }
+.body .news_content .pic { display: block; float: left; width: 450px; height: 300px; }
+.body .news_content .con { margin-left: 470px; width: 520px; height: 460px; padding-right: 10px; font-size: 12px; line-height: 25px; }
+.body .news_content .con  p { margin: 10px 0px; }
+
+.mask { display: none; background: url(../image/mask_bg.png) repeat; position: fixed; width: 100%; height: 100%; top: 0; bottom: 0; left: 0; right: 0; z-index: 10; }
+.mask .main { position: relative; width: 1000px; height: 600px; margin: 8% auto; background: #fff; }
+.mask .main .close { position: absolute; background: url(../image/close.png); width: 44px; height: 49px; top: -60px; right: 0; }
+.mask .main .pic { width: 100%; height: 470px; }
+.mask .main .pic .img { }
+.mask .main .txt { padding: 10px 20px; font-size: 12px; }
+.mask .main .tit { font-weight: bold; font-size: 12px; height: 25px; }
+.mask .main .des { font-size: 12px; line-height: 22px; margin: 10px 0 }
+
+.scrollpane { overflow: auto; }
+.scrollpane .jspVerticalBar { position: absolute; top: 0; right: 0px; width: 16px; height: 100%; }
+.scrollpane .jspHorizontalBar { position: absolute; bottom: 0; left: 0; width: 100%; height: 16px; }
+.scrollpane .jspTrack { background: #333; position: relative; width: 2px; margin: 0 auto; }
+.scrollpane .jspDrag { background: #A61611; position: absolute; top: 0; left: -2px; cursor: pointer; width: 6px; }
+.scrollpane .jspHorizontalBar .jspTrack { position: relative; height: 2px; }
+.scrollpane .jspHorizontalBar .jspDrag { position: absolute; top: -2px; height: 6px; }
+
+.lavaLamp { position: relative }
+.lavaLamp li.back { height: 2px; background: #EB483D; position: absolute; top: 22px; z-index: 5; width: 100%; }

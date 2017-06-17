@@ -1,0 +1,3 @@
+独立域名	                CNAME地址
+wuliangyuanjiang.com	jp.cname.saebbs.com
+wuyuanliangjiang.com	jp.cname.saebbs.com

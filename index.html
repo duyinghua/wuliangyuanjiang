@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>中国四川·川崃香酒业有限公司</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="中国四川 川崃香酒业有限公司 五粮原浆 wuliangyuangjiang">
+    <link rel="stylesheet" href="http://chlx.sinaapp.com/css/styles.css"/>
+    <script src="http://chlx.sinaapp.com/js/jquery-1.7.1.min.js"></script>
+    <script>
+        var intervalTimer, ctrlTimer;
+        function prevRun() {
+            var $cur = $(".banner .cur");
+            var prev = $cur.prev("li");
+            if (prev.length > 0) {
+                prev = prev.eq(prev.length - 1);
+            } else {
+                prev = $(".banner li").last();
+            }
+            $cur.children(".font").animate({left: "40%"}, 1000);
+            $cur.fadeOut(1000, function () {
+                $cur.removeClass("cur");
+            });
+            prev.fadeIn(1000, function () {
+                prev.addClass("cur")
+            });
+            prev.children(".font").animate({left: "0%"}, 1000);
+        }
+        function nextRun() {
+            var $cur = $(".banner .cur");
+            var next = $cur.next("li");
+            if (next.length > 0) {
+                next = next.eq(0);
+            } else {
+                next = $(".banner li").first();
+            }
+            $cur.fadeOut(1000, function () {
+                $cur.removeClass("cur");
+            });
+            $cur.children(".font").animate({left: "40%"}, 1000);
+            next.fadeIn(1000, function () {
+                next.addClass("cur")
+            });
+            next.children(".font").animate({left: "0%"}, 1000);
+        }
+        function next() {
+            clearInterval(ctrlTimer);
+            clearInterval(intervalTimer);
+            nextRun();
+            ctrlTimer = setTimeout(autoRun, 3000)
+        }
+        function prev() {
+            clearInterval(ctrlTimer);
+            clearInterval(intervalTimer);
+            prevRun();
+            ctrlTimer = setTimeout(autoRun, 3000)
+        }
+        function autoRun() {
+            intervalTimer = setInterval(function () {
+                nextRun();
+            }, 3000)
+        }
+    </script>
+
+</head>
+<body class="index" onload="autoRun();">
+<div class="banner">
+    <ul>
+        <li class="li1 cur"><img class="bg" src="http://chlx.sinaapp.com/image/index_bg1.jpg"><img class="font" src="http://chlx.sinaapp.com/image/index_font1.png">
+        </li>
+        <li class="li2"><img class="bg" src="http://chlx.sinaapp.com/image/index_bg2.jpg"><img class="font" src="http://chlx.sinaapp.com/image/index_font2.png">
+        </li>
+        <li class="li3"><img class="bg" src="http://chlx.sinaapp.com/image/index_bg3.jpg"><img class="font" src="http://chlx.sinaapp.com/image/index_font3.png">
+        </li>
+        <li class="li4"><img class="bg" src="http://chlx.sinaapp.com/image/index_bg4.jpg"><img class="font" src="http://chlx.sinaapp.com/image/index_font4.png">
+        </li>
+    </ul>
+    <img class="code2" src="http://chlx.sinaapp.com/image/code2.png">
+    <a class="nav_btn prev" href="javascript:void(0);" onclick="prev()"></a>
+    <a class="nav_btn next" href="javascript:void(0);" onclick="next()"></a>
+</div>
+<div class="footer">
+    <div class="main">
+        <ul class="contact">
+            <li class="tel">座机：+86(028) 85875490</li>
+            <li class="email">邮箱：chuanlaixiang@sina.com</li>
+            <li class="addr">地址：四川省成都市机场路雅南居2栋4-102</li>
+        </ul>
+        <ul class="nav">
+            <li><a href="#" class="cur">网站首页</a></li>
+            <li><a href="./v_product/wineDetail.html">产品展示</a></li>
+            <li><a href="./v_investment/wishesWord.html">招商服务</a></li>
+            <!--<li><a href="./v_culture/paintingShow.html">企业文化</a></li>-->
+            <li><a href="./v_about/companyProfile.html">关于我们</a></li>
+        </ul>
+        <div class="share">
+            <div class="bshare-custom">
+                分享到：
+                <a title="分享到QQ空间" class="bshare-qzone"></a>
+                <a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+                <a title="分享到开心网" class="bshare-kaixin001"></a>
+                <a title="分享到人人网" class="bshare-renren"></a>
+                <a title="分享到腾讯微博" class="bshare-qqmb"></a>
+                <a class="bshare-more bshare-more-icon more-style-addthis"></a>
+            </div>
+            <script type="text/javascript" charset="utf-8"
+                    src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+            <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+
+        </div>
+        <p class="copyright">
+            COPYRIGHT 2013 ALL RIGHT RESEIVED.&nbsp;&nbsp;版权所有：中国四川.川崃香酒业有限公司
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
